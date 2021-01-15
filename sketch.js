@@ -21,7 +21,7 @@ var backgroundImage;
 
 var score = 0;
 
-var changingtext = "DONT PRESS SPACE TO GET ANOTHER CHANCE TO PLAY
+var changingtext = "DONT PRESS SPACE TO GET ANOTHER CHANCE TO PLAY";
 
 function preload() {
   getTime()
