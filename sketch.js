@@ -19,7 +19,9 @@ var slingshot;
 
 var backgroundImage;
 
-var scoregame = 0;
+var score = 0;
+
+var changingtext = "DONT PRESS SPACE TO GET ANOTHER CHANCE TO PLAY
 
 function preload() {
   getTime()
@@ -50,13 +52,13 @@ function setup() {
   b16 = new Box(630, 175, 30, 40);
   b17 = new Box(600, 135, 30, 40);
 
-  /*b18 = new Box(1000,120,30,40);
+  b18 = new Box(1000,120,30,40);
   b19 = new Box(1000,120,30,40);
   b20 = new Box(1000,120,30,40);
   b21 = new Box(1000,120,30,40);
   b22 = new Box(1000,120,30,40);
   b23 = new Box(990,120,30,40);
-  b24 = new Box(1000,120,30,40);*/
+  b24 = new Box(1000,120,30,40);
 
   blocks1 = new Box(840, 175, 30, 40);
   blocks2 = new Box(870, 175, 30, 40);
@@ -100,13 +102,13 @@ console.log(scoregame)
 
  // console.log(polygon.body.position);
 
-  fill("red")
-  textSize(20)
-  text("Drag the Hexagon and realease it towards the Blocks ",200,50);
+  fill("lightblue")
+  textSize(5)
+  text("BLAAAABLOOOLAOKCOALOSLOLDDSJNDLNASN LOL ",200,50);
 
-  fill("red")
-  textSize(20)
-  text("Press Space key to get another chance to play ",400,350);
+  fill("lightgreen")
+  textSize(10)
+  text(changingtext,400,350);
 
   drawSprites();
 
@@ -204,6 +206,7 @@ function mouseDragged(){
   function keyPressed() {
     if (keyCode === 32) {
       slingshot.attach(polygon.body);
+      changingtext = "AHHH WHY U DO THIS TO ME";
     }
   }
 
