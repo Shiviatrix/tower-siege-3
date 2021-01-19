@@ -19,7 +19,7 @@ var slingshot;
 
 var backgroundImage;
 
-var score = 0;
+var scoregame = 0;
 
 var changingtext = "DONT PRESS SPACE TO GET ANOTHER CHANCE TO PLAY";
 
