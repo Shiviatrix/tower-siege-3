@@ -206,7 +206,8 @@ function mouseDragged(){
   function keyPressed() {
     if (keyCode === 32) {
       slingshot.attach(polygon.body);
-      changingtext = "AHHH WHY U DO THIS TO ME";
+      changingtext = null;
+      text("WHY U DO DIS TO MEEEEEEEE"400,350);
     }
   }
 
